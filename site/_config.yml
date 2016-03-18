@@ -12,3 +12,11 @@ help_url: https://github.com/jekyll/jekyll-help
 collections:
   docs:
     output: true
+
+name: Jekyll • 简单静态博客网站生成器
+description: 将纯文本转换为静态博客网站
+# url: http://jekyllrb.com
+url: http://jekyllcn.com
+
+gems:
+  - jekyll-feed

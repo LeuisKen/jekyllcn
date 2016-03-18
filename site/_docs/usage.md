@@ -2,7 +2,7 @@
 layout: docs
 title: 基本用法
 permalink: /docs/usage/
-translators: [Neo-J, chaucerling]
+translators: [Neo-J, chaucerling, archersmind]
 hash: 5647b91
 ---
 
@@ -22,6 +22,18 @@ $ jekyll build --watch
 # => 当前文件夹中的内容将会生成到 ./_site 文件夹中，
 #    查看改变，并且自动再生成。
 {% endhighlight %}
+
+<div class="note info">
+  <h5>在自动构建过程中对 _config.yml 的修改将不会被包含其中。</h5>
+  <p>
+    <code>_config.yml</code> 管理包含全局配置和变量定义在内的配置文件
+    并且这些变量定义在执行时会被读取. 所有 <code>_config.yml</code> 中的改动
+    在自动构建过程中，都不会被加载直到下一次执行开始。
+  </p>
+  <p>
+    注意 <a href="../datafiles">Data Files</a> 在自动构建过程中会被包含和加载。
+  </p>
+</div>
 
 <div class="note warning">
   <h5>Destination 文件夹会在站点建立时被清理</h5>
